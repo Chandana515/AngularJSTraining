@@ -1,0 +1,17 @@
+<html ng-app="xyz">
+    <head>
+        <title>ng-change</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        </head>
+<body>
+
+<div ng-controller="ctrl">
+  <p>Write something in the input field:</p>
+  <input type="text" ng-change="myFunc()" ng-model="myValue" />
+  <p>The input field has changed {{count}} times.</p>
+</div>
+
+
+</body>
+</html>

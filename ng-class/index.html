@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="">
+    <head>
+<script src="angular.min.js"></script>
+<style>
+.Leaf {
+    color:black;
+    background-color:red;
+    padding:20px;
+    font-family:"Times new roman";
+}
+.Raddish{
+    background-color:forestgreen;
+    padding:40px;
+    font-family:Brush;
+}
+</style>
+</head>
+
+<p>Choose a class:</p>
+
+<select ng-model="home">
+<option value="Leaf">Leaf</option>
+<option value="Raddish">Raddish</option>
+</select>
+
+<div ng-class="home">
+  <h1>How are you?</h1>
+  <p>I like it!</p>
+</div>
+
+</body>
+</html>
